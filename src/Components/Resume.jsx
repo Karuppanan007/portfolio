@@ -67,9 +67,9 @@ const Resume = () => {
             <h3 className="text-lg font-semibold text-gray-800">
               High School (12th Grade)
             </h3>
-            <p className="text-gray-600">Sree Veerappa Vidhyala Higher Secondary School, 2018 - 2020</p>
-            <p className="text-gray-600">Virudhunagar, Kullursandhai - 626004</p>
-            <p className="text-gray-700 font-medium">Percentage: 56%</p>
+            <p className="text-black">Sree Veerappa Vidhyala Higher Secondary School, 2018 - 2020</p>
+            <p className="text-black">Virudhunagar, Kullursandhai - 626004</p>
+            <p className="text-black font-medium">Percentage: 56%</p>
           </div>
 
         
@@ -77,16 +77,16 @@ const Resume = () => {
             <h3 className="text-lg font-semibold text-gray-800">
               High School (10th Grade)
             </h3>
-            <p className="text-gray-600">Sree Veerappa Vidhyala Higher Secondary School, 2016 - 2018</p>
-            <p className="text-gray-600">Virudhunagar, Kullursandhai - 626004</p>
-            <p className="text-gray-700 font-medium">Percentage: 76%</p>
+            <p className="text-black">Sree Veerappa Vidhyala Higher Secondary School, 2016 - 2018</p>
+            <p className="text-black">Virudhunagar, Kullursandhai - 626004</p>
+            <p className="text-black font-medium">Percentage: 76%</p>
           </div>
         </div>
 
        
         <div className="mt-8 text-center">
           <a
-            href="/src/assets/Resume.pdf"
+            href="/src/document/Resume.pdf"
             download="My_Resume.pdf"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105"
           >

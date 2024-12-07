@@ -36,7 +36,6 @@ function App() {
 
       {/* Personal Details Section */}
       <div className="mb-2 order-2 md:order-2 text-center md:text-left">
-        <p className="text-sm">© {new Date().getFullYear()} All Rights Reserved</p>
         <span className="text-sm flex gap-2 mt-1">
           <FaPhoneAlt size={16} /> 91+ 7339137389
         </span>
@@ -48,7 +47,7 @@ function App() {
       {/* Social Media Section */}
       <div className="flex space-x-4 order-3 md:order-3 mt-2 md:mt-0">
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/karuppanan-k-b82184268/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-300 transition-all duration-300"
@@ -56,7 +55,7 @@ function App() {
           <FaLinkedin size={20} />
         </a>
         <a
-          href="https://github.com/your-profile"
+          href="https://github.com/Karuppanan007"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-300 transition-all duration-300"
@@ -64,7 +63,7 @@ function App() {
           <FaGithub size={20} />
         </a>
         <a
-          href="https://twitter.com/your-profile"
+          href="https://x.com/Karuppusurya7?t=0dppDGVr3M9vNjma3w_75g&s=09"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-yellow-300 transition-all duration-300"
@@ -80,7 +79,7 @@ function App() {
       </div>
     </div>
 
-    {/* Bottom Menu for Mobile */}
+   
     <div className="text-center text-sm md:text-base mt-4 md:mt-0">
       <a
         href="#home"
