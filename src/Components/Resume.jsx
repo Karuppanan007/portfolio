@@ -5,12 +5,12 @@ import { MdSchool } from "react-icons/md";
 const Resume = () => {
   return (
     <div id="resume" className="pt-10">
-      {/* Header */}
+     
       <h1 className="text-4xl font-bold text-center pt-10 mb-6 animate-fade-in">
         Resume
       </h1>
 
-      {/* Personal Information */}
+    
       <div className="bg-white shadow-lg rounded-lg p-6 md:p-10 max-w-4xl mx-auto mb-10 animate-slide-up">
         <h2 className="text-3xl font-semibold  pb-2 mb-6">
           Personal Information
@@ -43,7 +43,7 @@ const Resume = () => {
         </div>
       </div>
 
-      {/* Education Section */}
+      
       <div className="bg-white shadow-lg rounded-lg p-2 md:p-10 max-w-4xl mx-auto animate-slide-up">
         <div className="flex items-center gap-2 mb-3">
           <MdSchool size={35} className="text-orange-400" />
@@ -52,7 +52,7 @@ const Resume = () => {
           </h2>
         </div>
         <div className="space-y-6">
-          {/* Bachelor of Engineering */}
+          
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               Bachelor of Engineering
@@ -62,7 +62,7 @@ const Resume = () => {
             <p className="text-gray-700 font-medium">CGPA: 7.23</p>
           </div>
 
-          {/* High School (12th Grade) */}
+         
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               High School (12th Grade)
@@ -72,7 +72,7 @@ const Resume = () => {
             <p className="text-gray-700 font-medium">Percentage: 56%</p>
           </div>
 
-          {/* High School (10th Grade) */}
+        
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               High School (10th Grade)
@@ -83,7 +83,7 @@ const Resume = () => {
           </div>
         </div>
 
-        {/* Download Resume */}
+       
         <div className="mt-8 text-center">
           <a
             href="/src/assets/Resume.pdf"

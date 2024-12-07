@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { GiCrossMark } from "react-icons/gi";
 import { CgMenuRightAlt } from "react-icons/cg";
 
@@ -9,63 +9,103 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      setIsOpen(false); 
+    }
+  };
+
   return (
     <header className="bg-orange-500 text-white fixed w-full z-10 shadow-md">
-      <div className="container mx-auto flex justify-center items-center p-4">
-       
-
-       
+      <div className="container mx-auto flex justify-end lg:justify-center items-center p-5">
+        
         <nav className="hidden md:flex space-x-6">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#resume">Resume</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <button
+            onClick={() => scrollToSection("home")}
+            className="hover:text-yellow-300"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => scrollToSection("about")}
+            className="hover:text-yellow-300"
+          >
+            About
+          </button>
+          <button
+            onClick={() => scrollToSection("resume")}
+            className="hover:text-yellow-300"
+          >
+            Resume
+          </button>
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="hover:text-yellow-300"
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="hover:text-yellow-300"
+          >
+            Contact
+          </button>
         </nav>
 
-      
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={toggleMenu}
-        >
-          {isOpen ? (
-          
-            <GiCrossMark size={23} />
-          ) : (
-     
-            <CgMenuRightAlt size={23} />
-          )}
+       
+        <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
+          {isOpen ? <GiCrossMark size={23} /> : <CgMenuRightAlt size={23} />}
         </button>
       </div>
 
-
+     
       {isOpen && (
         <nav className="md:hidden bg-orange-500">
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li>
-              <a href="#home" onClick={toggleMenu}>
+              <button
+                onClick={() => scrollToSection("home")}
+                className="hover:text-yellow-300"
+              >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#about" onClick={toggleMenu}>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="hover:text-yellow-300"
+              >
                 About
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#resume" onClick={toggleMenu}>
+              <button
+                onClick={() => scrollToSection("resume")}
+                className="hover:text-yellow-300"
+              >
                 Resume
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#projects" onClick={toggleMenu}>
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="hover:text-yellow-300"
+              >
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#contact" onClick={toggleMenu}>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="hover:text-yellow-300"
+              >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

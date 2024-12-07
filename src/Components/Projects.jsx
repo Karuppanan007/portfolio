@@ -11,7 +11,7 @@ const Projects = () => {
         <h1 className='text-4xl font-bold text-center'>Projects</h1>
 
         <div className='flex gap-14 justify-center mt-16 flex-wrap'>
-          {/* Portfolio Card */}
+         
           <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={port} width={190} alt="port" className='ml-5' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">Portfolio</h5>
@@ -24,7 +24,7 @@ const Projects = () => {
             </a>
           </div>
 
-          {/* Food Recipe App Card */}
+        
           <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={food} alt="food" height={50} className='' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black mt-4">Food Recipe App</h5>
@@ -37,7 +37,7 @@ const Projects = () => {
             </a>
           </div>
 
-          {/* Tic-Tac-Toe Game Card */}
+   
           <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={tic} alt="game" width={190} className='ml-6' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">Game</h5>
