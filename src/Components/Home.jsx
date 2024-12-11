@@ -7,6 +7,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 const Home = () => {
   return (
+    <>
     <section
       id="home"
       className="bg-gradient-to-b from-purple-700 via-indigo-700 to-blue-700 text-white min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-8"
@@ -123,6 +124,7 @@ const Home = () => {
         </motion.a>
       </motion.div>
     </section>
+    </>
   );
 };
 

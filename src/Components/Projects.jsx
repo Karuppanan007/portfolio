@@ -12,7 +12,7 @@ const Projects = () => {
 
         <div className='flex gap-14 justify-center mt-16 flex-wrap'>
          
-          <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
+          <div className="w-72 p-3 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={port} width={190} alt="port" className='ml-5' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">Portfolio</h5>
             <p className="mb-3 font-normal text-black">A passionate frontend developer crafting responsive, user-friendly websites and applications with a modern, aesthetic touch.</p>
@@ -25,7 +25,7 @@ const Projects = () => {
           </div>
 
         
-          <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
+          <div className="w-72 p-3 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={food} alt="food" height={50} className='' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black mt-4">Food Recipe App</h5>
             <p className="mb-3 font-normal text-black">A food recipe app built with ReactJS and Tailwind CSS. It uses APIs to offer a variety of recipes and cooking instructions.</p>
@@ -38,7 +38,7 @@ const Projects = () => {
           </div>
 
    
-          <div className="w-72 p-5 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
+          <div className="w-72 p-3 border border-slate-300 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100">
             <img src={tic} alt="game" width={190} className='ml-6' />
             <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">Game</h5>
             <p className="mb-3 font-normal text-black">A classic Tic-Tac-Toe game built with HTML, CSS, and JavaScript, allowing two players to complete this game.</p>

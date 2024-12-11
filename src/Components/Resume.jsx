@@ -45,7 +45,7 @@ const Resume = () => {
 
       
       <div className="bg-white shadow-lg rounded-lg p-2 md:p-10 max-w-4xl mx-auto animate-slide-up">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-3 mb-3">
           <MdSchool size={35} className="text-orange-400" />
           <h2 className="text-3xl font-semibold  pb-2">
             Education
@@ -86,7 +86,7 @@ const Resume = () => {
        
         <div className="mt-8 text-center">
           <a
-            href="/src/document/Resume.pdf"
+            href="/src/Components/document/Resume.pdf"
             download="My_Resume.pdf"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105"
           >
@@ -96,6 +96,6 @@ const Resume = () => {
       </div>
     </div>
   );
-};
+};      
 
 export default Resume;
