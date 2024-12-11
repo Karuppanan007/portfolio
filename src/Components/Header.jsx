@@ -23,10 +23,10 @@ const Header = () => {
 
   return (
     <header className="bg-orange-500 text-white fixed w-full z-10 shadow-md">
-      <div className="container mx-auto flex justify-between  items-center p-5">
+      <div className="container mx-auto flex justify-between  items-center p-3">
         
           <h1 className="text-3xl font-bold">Portfolio </h1>
-        <nav className="hidden md:flex space-x-6 lg:mr-20">
+        <nav className="hidden md:flex space-x-6">
           <button
             onClick={() => scrollToSection("home")}
             className="hover:text-yellow-300"

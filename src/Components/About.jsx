@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profile from "../assets/image.png";
+import profile from "../assets/image.svg";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
@@ -24,10 +24,12 @@ const skills = [
 const About = () => {
   return (
     <>
-      <div className="">
+      <div id="about" className="pt-24">
+        <h2 className="text-4xl font-bold text-center"><span className="underline"></span>About Me</h2>
+        
         <section
-          id="about"
-          className=" pt-24 flex flex-col md:flex-row items-center justify-center px-6 sm:px-12"
+
+          className="mt-3 flex flex-col md:flex-row items-center justify-center px-6 sm:px-12"
         >
 
           <motion.div
@@ -36,7 +38,6 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
             <p className="text-2xl sm:text-3xl font-semibold mb-4">Summary</p>
             <p className="text-md sm:text-xl">
               A highly motivated web developer in frontend technologies, basic
@@ -57,7 +58,7 @@ const About = () => {
             <motion.img
               src={profile}
               alt="Karuppanan"
-              className="w-64 sm:w-72 md:w-80 rounded-full shadow-lg border-4 border-yellow-400"
+              className="w-64 sm:w-72 md:w-80 rounded-full shadow-lg border-4 border-orange-300"
               animate={{
                 rotateY: [0, 360],
               }}
@@ -77,7 +78,7 @@ const About = () => {
 
         <section
           id="myskills"
-          className="pb-20 mt-10 px-6 sm:px-12 flex flex-col items-center justify-center"
+          className="pb-10 mt-5  px-6 sm:px-12 flex flex-col items-center justify-center"
         >
           <h1 className="text-3xl font-bold mb-10">My Skills</h1>
           <div className="flex flex-wrap justify-center gap-12">
