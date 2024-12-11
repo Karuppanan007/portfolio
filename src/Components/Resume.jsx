@@ -86,7 +86,7 @@ const Resume = () => {
        
         <div className="mt-8 text-center">
           <a
-            href="/src/Components/document/Resume.pdf"
+            href="https://drive.google.com/file/d/1DvH2cmBHJYAgCNRGTDnKowSKTnp1ZlzK/view?usp=sharing"
             download="My_Resume.pdf"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105"
           >
