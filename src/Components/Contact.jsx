@@ -24,7 +24,7 @@ const Contact = () => {
     setResponseMessage("");
 
     try {
-      const response = await axios.post("https://portbackend-b9z0.onrender.com/api/send-email", formData);
+      const response = await axios.post("https://portbackend-s20o.onrender.com/api/send-email", formData);
       setResponseMessage(response.data.success || "Email sent successfully!");
     } catch (error) {
       if (error.response && error.response.data && error.response.data.error) {
