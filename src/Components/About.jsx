@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import profile from "../assets/image.svg";
+import profile from "../assets/My photo1.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
@@ -9,6 +9,7 @@ import react from "../assets/react.png";
 import sql from "../assets/mysql.png";
 import figma from "../assets/figma.png";
 import tailwind from "../assets/tailwind.webp";
+import ScrollReveal from "scrollreveal";
 
 const skills = [
   { name: "HTML", image: html },
@@ -22,14 +23,54 @@ const skills = [
 ];
 
 const About = () => {
+    // useEffect(() => {
+    //   ScrollReveal().reveal(".about",{origin: "bottom",
+    //     distance: "100px",
+    //     duration: 2000,
+    //     easing: "ease-in-out",
+    //     reset: true,});
+    //   ScrollReveal().reveal(".sum",{origin: "right",
+    //     distance: "100px",
+    //     duration: 4000,
+    //     easing: "ease-in-out",
+    //     reset: true,});
+    //     ScrollReveal().reveal(".skill", {origin: "left",
+    //       distance: "100px",
+    //       duration: 3000,
+    //       easing: "ease-in-out",
+    //       reset: true,});
+    //     ScrollReveal().reveal(".head", {origin: "top",
+    //       distance: "100px",
+    //       duration: 2000,
+    //       easing: "ease-in",
+    //       reset: true,});
+
+    // }, []);
+
+    useEffect(() => {
+      const sr = ScrollReveal({
+        distance: "100px",
+        duration: 2000,
+        easing: "ease-in-out",
+        reset: true, 
+      });
+    
+      sr.reveal(".about", { origin: "top",delay: 100 });
+      sr.reveal(".sum", { origin: "right", delay: 200 });
+      sr.reveal(".skill", { origin: "left", delay: 300 });
+      sr.reveal(".head", { origin: "top", delay: 200 });
+    
+      return () => sr.destroy();
+    }, []);
+    
   return (
     <>
       <div id="about" className="pt-24">
-        <h2 className="text-4xl font-bold text-center"><span className="underline"></span>About Me</h2>
         
+        <h2 className="text-4xl font-bold text-center head">About Me</h2>
         <section
 
-          className="mt-3 flex flex-col md:flex-row items-center justify-center px-6 sm:px-12"
+          className="about mt-3 flex flex-col md:flex-row items-center justify-center px-4"
         >
 
           <motion.div
@@ -38,7 +79,7 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-2xl sm:text-3xl font-semibold mb-4">Summary</p>
+            <p className="sum text-2xl sm:text-3xl font-semibold mb-4">Summary</p>
             <p className="text-md sm:text-xl">
               A highly motivated web developer in frontend technologies, basic
               Python programming, and database management using SQL and MySQL.
@@ -51,26 +92,20 @@ const About = () => {
 
           <motion.div
             className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0"
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <motion.img
               src={profile}
               alt="Karuppanan"
-              className="w-64 sm:w-72 md:w-80 rounded-full shadow-lg border-4 border-orange-300"
-              animate={{
-                rotateY: [0, 360],
-              }}
+              className="w-64 sm:w-56 md:w-64 filter items-center lg:mr-10 rounded-full shadow-lg border-4 border-yellow-300"
               transition={{
                 repeat: Infinity,
                 duration: 3,
                 ease: "linear",
               }}
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
+             
             />
           </motion.div>
         </section>
@@ -78,7 +113,7 @@ const About = () => {
 
         <section
           id="myskills"
-          className="pb-10 mt-5  px-6 sm:px-12 flex flex-col items-center justify-center"
+          className="skill pb-10 mt-5  px-6 sm:px-12 flex flex-col items-center justify-center"
         >
           <h1 className="text-3xl font-bold mb-10">My Skills</h1>
           <div className="flex flex-wrap justify-center gap-12">

@@ -1,41 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import { MdSchool } from "react-icons/md";
+import ScrollReveal from "scrollreveal";
 
 const Resume = () => {
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "100px",
+      duration: 2000,
+      easing: "ease-in-out",
+      reset: true,
+    });
+
+    sr.reveal(".resume", { origin: "top", delay: 200 });
+    sr.reveal(".info", { origin: "bottom", delay: 200 });
+    sr.reveal(".education", { origin: "left", delay: 300 });
+    sr.reveal(".download-btn", { origin: "bottom", delay: 400 });
+
+    return () => sr.destroy();
+  }, []);
+
+
   return (
-    <div id="resume" className="pt-10">
-     
-      <h1 className="text-4xl font-bold text-center pt-10 mb-6 animate-fade-in">
+    <div id="resume" className=" pt-10">
+
+      <h1 className="resume text-4xl font-bold text-center pt-10 mb-6 animate-fade-in">
         Resume
       </h1>
 
-    
-      <div className="bg-white shadow-lg rounded-lg p-6 md:p-10 max-w-4xl mx-auto mb-10 animate-slide-up">
+
+      <div className="info bg-white shadow-lg rounded-lg p-6 md:p-10 lg:max-w-3xl  mx-auto mb-10 animate-slide-up">
         <h2 className="text-3xl font-semibold  pb-2 mb-6">
           Personal Information
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex items-center">
-            <TbArrowBadgeRightFilled size={24} className="text-orange-500 mr-2" />
+            <TbArrowBadgeRightFilled size={24} className="text-orange-500 " />
             <span className="text-gray-700 text-lg font-medium">
               <strong>Name:</strong> Karuppanan K
             </span>
           </div>
           <div className="flex items-center">
-            <TbArrowBadgeRightFilled size={24} className="text-orange-500 mr-2" />
+            <TbArrowBadgeRightFilled size={24} className="text-orange-500 " />
             <span className="text-gray-700 text-lg font-medium">
               <strong>Age:</strong> 22
             </span>
           </div>
           <div className="flex items-center">
-            <TbArrowBadgeRightFilled size={24} className="text-orange-500 mr-2" />
+            <TbArrowBadgeRightFilled size={24} className="text-orange-500 " />
             <span className="text-gray-700 text-lg font-medium">
               <strong>Email:</strong> karuppusurya007@gmail.com
             </span>
           </div>
           <div className="flex items-center">
-            <TbArrowBadgeRightFilled size={24} className="text-orange-500 mr-2" />
+            <TbArrowBadgeRightFilled size={24} className="text-orange-500 " />
             <span className="text-gray-700 text-lg font-medium">
               <strong>Phone:</strong> +91 7339137389
             </span>
@@ -43,16 +62,16 @@ const Resume = () => {
         </div>
       </div>
 
-      
-      <div className="bg-white shadow-lg rounded-lg p-2 md:p-10 max-w-4xl mx-auto animate-slide-up">
+
+      <div className="education bg-white shadow-lg rounded-lg p-2 md:p-10 max-w-3xl mx-auto animate-slide-up">
         <div className="flex items-center gap-3 mb-3">
           <MdSchool size={35} className="text-orange-400" />
           <h2 className="text-3xl font-semibold  pb-2">
             Education
           </h2>
         </div>
-        <div className="space-y-6">
-          
+        <div className="space-y-3">
+
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               Bachelor of Engineering
@@ -62,7 +81,7 @@ const Resume = () => {
             <p className="text-gray-700 font-medium">CGPA: 7.23</p>
           </div>
 
-         
+
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               High School (12th Grade)
@@ -72,7 +91,7 @@ const Resume = () => {
             <p className="text-black font-medium">Percentage: 56%</p>
           </div>
 
-        
+
           <div>
             <h3 className="text-lg font-semibold text-gray-800">
               High School (10th Grade)
@@ -83,19 +102,20 @@ const Resume = () => {
           </div>
         </div>
 
-       
-        <div className="mt-8 text-center">
+
+        <div className="mt-8 text-center download-btn">
           <a
-            href="https://drive.google.com/file/d/1DvH2cmBHJYAgCNRGTDnKowSKTnp1ZlzK/view?usp=sharing"
-            download="My_Resume.pdf"
+            href="/Resume/KaruppananResume.pdf"
+            download="KaruppananResume.pdf"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105"
           >
             Download Resume
           </a>
         </div>
+
       </div>
     </div>
   );
-};      
+};
 
 export default Resume;

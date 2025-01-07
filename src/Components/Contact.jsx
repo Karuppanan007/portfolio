@@ -1,8 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import mail from "../assets/mail.png"; 
 import axios from "axios";
+import ScrollReveal from "scrollreveal";
 
 const Contact = () => {
+
+    // useEffect(() => {
+    //   ScrollReveal().reveal(".head",{origin: "bottom",
+    //     distance: "100px",
+    //     duration: 2000,
+    //     easing: "ease-in-out",
+    //     reset: true,} );
+    //   ScrollReveal().reveal(".img",{origin: "bottom",
+    //     distance: "100px",
+    //     duration: 3000,
+    //     easing: "ease-in-out",
+    //     reset: true,} );
+    //   ScrollReveal().reveal(".form",{origin: "left",
+    //     distance: "100px",
+    //     duration: 4000,
+    //     easing: "ease-in-out",
+    //     reset: true,} );
+    // }, []);
+ 
+
+    useEffect(() => {
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 2000,
+        easing: "ease-in-out",
+        reset: true,
+      });
+    
+      sr.reveal(".head", { delay: 200 });
+      sr.reveal(".img", { delay: 400 });
+      sr.reveal(".form", { delay: 600 });
+    
+      // Cleanup function to avoid memory leaks
+      return () => sr.destroy();
+    }, []);
+    
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,13 +83,13 @@ const Contact = () => {
 
   return (
     <div id="contact" className="py-12 bg-gray-50">
-      <h1 className="text-center text-4xl font-extrabold my-6 text-black animate__animated animate__fadeInDown">
+      <h1 className="head text-center text-4xl font-extrabold my-6 text-black animate__animated animate__fadeInDown">
         Contact Us
       </h1>
 
       <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
        
-        <div className="flex items-center justify-center animate__animated animate__zoomIn">
+        <div className="img flex items-center justify-center animate__animated animate__zoomIn">
           <img
             src={mail}
             alt="Contact Illustration"
@@ -61,12 +99,12 @@ const Contact = () => {
 
        
         <div
-          className="bg-white p-5 rounded-lg shadow-lg"
+          className="form bg-white p-5 rounded-lg shadow-lg"
         >
-          <form onSubmit={handleSubmit} className="space-y-3">
+          <form onSubmit={handleSubmit} className=" space-y-2">
            
-            <div>
-              <label htmlFor="name" className="block text-gray-700 font-medium">
+            <div className="">
+              <label htmlFor="name" className=" block text-gray-700 font-medium">
                 Name
               </label>
               <input

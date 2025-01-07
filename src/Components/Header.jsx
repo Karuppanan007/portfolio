@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="bg-orange-500 text-white fixed w-full z-10 shadow-md">
-      <div className="container mx-auto flex justify-between  items-center p-3">
+      <div className="container  flex justify-between  items-center p-3">
         
           <h1 className="text-3xl font-bold">Portfolio </h1>
         <nav className="hidden md:flex space-x-6">
@@ -69,7 +69,7 @@ const Header = () => {
      
       {isOpen && (
         <nav className="md:hidden bg-orange-500">
-          <ul className="flex flex-col items-center space-y-4 py-4">
+          <ul className="flex flex-col items-center space-y-4 py-2">
             <li>
               <button
                 onClick={() => scrollToSection("home")}
