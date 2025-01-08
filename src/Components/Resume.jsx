@@ -6,24 +6,26 @@ import ScrollReveal from "scrollreveal";
 const Resume = () => {
 
   useEffect(() => {
+
     const sr = ScrollReveal({
-      distance: "100px",
-      duration: 2000,
+      origin: "bottom",
+      distance: "150px",
+      duration: 1500,
       easing: "ease-in-out",
       reset: true,
     });
 
-    sr.reveal(".resume", { origin: "top", delay: 200 });
-    sr.reveal(".info", { origin: "bottom", delay: 200 });
-    sr.reveal(".education", { origin: "left", delay: 300 });
-    sr.reveal(".download-btn", { origin: "bottom", delay: 400 });
+    sr.reveal(".resume");
+    sr.reveal(".info");
+    sr.reveal(".education");
+    sr.reveal(".download-btn");
 
     return () => sr.destroy();
   }, []);
 
 
   return (
-    <div id="resume" className=" pt-10">
+    <div id="resume" className=" pt-14">
 
       <h1 className="resume text-4xl font-bold text-center pt-10 mb-6 animate-fade-in">
         Resume
@@ -106,11 +108,9 @@ const Resume = () => {
         <div className="mt-8 text-center download-btn">
           <a
             href="/Resume/KaruppananResume.pdf"
-            download="KaruppananResume.pdf"
+            download="KaruppananResume.pdf" 
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105"
-          >
-            Download Resume
-          </a>
+         >Download Resume</a>
         </div>
 
       </div>

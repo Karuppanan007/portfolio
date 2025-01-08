@@ -23,42 +23,19 @@ const skills = [
 ];
 
 const About = () => {
-    // useEffect(() => {
-    //   ScrollReveal().reveal(".about",{origin: "bottom",
-    //     distance: "100px",
-    //     duration: 2000,
-    //     easing: "ease-in-out",
-    //     reset: true,});
-    //   ScrollReveal().reveal(".sum",{origin: "right",
-    //     distance: "100px",
-    //     duration: 4000,
-    //     easing: "ease-in-out",
-    //     reset: true,});
-    //     ScrollReveal().reveal(".skill", {origin: "left",
-    //       distance: "100px",
-    //       duration: 3000,
-    //       easing: "ease-in-out",
-    //       reset: true,});
-    //     ScrollReveal().reveal(".head", {origin: "top",
-    //       distance: "100px",
-    //       duration: 2000,
-    //       easing: "ease-in",
-    //       reset: true,});
-
-    // }, []);
-
     useEffect(() => {
       const sr = ScrollReveal({
-        distance: "100px",
-        duration: 2000,
+        origin: "bottom",
+        distance: "150px",
+        duration: 1500,
         easing: "ease-in-out",
         reset: true, 
       });
     
-      sr.reveal(".about", { origin: "top",delay: 100 });
-      sr.reveal(".sum", { origin: "right", delay: 200 });
-      sr.reveal(".skill", { origin: "left", delay: 300 });
-      sr.reveal(".head", { origin: "top", delay: 200 });
+      sr.reveal(".about");
+      sr.reveal(".sum");
+      sr.reveal(".skill");
+      sr.reveal(".head");
     
       return () => sr.destroy();
     }, []);

@@ -18,53 +18,19 @@ const Home = () => {
   };
 
 
-  // useEffect(() => {
-  //   ScrollReveal().reveal(".name", {origin: "top",
-  //     distance: "50px",
-  //     duration: 3000,
-  //     easing: "ease-in-out",
-  //     reset: true,
-  //   });
-  //   ScrollReveal().reveal(".sum", {origin: "right",
-  //     distance:'100px',
-  //     duration: 2000,
-  //     easing: "ease-in-out",
-  //     reset: true,
-  //   });
-  //   ScrollReveal().reveal(".img", {origin: "left",
-  //     distance:'90px',
-  //     duration: 3000,
-  //     easing: "ease-in-out",
-  //     reset: true,
-  //   });
-  //   ScrollReveal().reveal(".more", {origin: "bottom",
-  //     distance:'100px',
-  //     duration: 3000,
-  //     easing: "ease-out",
-  //     reset: true,
-  //   });
-  //   ScrollReveal().reveal(".social", {origin: "top",
-  //     distance:'100px',
-  //     duration: 3000,
-  //     easing: "ease-in",
-  //     reset: true,
-  //   });
-      
-  // }, []);
-
-  useEffect(() => {
+ useEffect(() => {
     const sr = ScrollReveal({
-      distance: '100px',
-      duration: 2000,
+      distance: '150px',
+      duration: 1500,
       easing: 'ease-in-out',
       reset: true, 
     });
   
-    sr.reveal('.name', { origin: 'top' });
-    sr.reveal('.sum', { origin: 'right', delay: 200 });
-    sr.reveal('.img', { origin: 'left', delay: 300 });
+    sr.reveal('.name', { origin: 'bottom' });
+    sr.reveal('.sum', { origin: 'bottom', delay: 200 });
+    sr.reveal('.img', { origin: 'bottom', delay: 300 });
     sr.reveal('.more', { origin: 'bottom', delay: 400 });
-    sr.reveal('.social', { origin: 'top', delay: 500 });
+    sr.reveal('.social', { origin: 'bottom', delay: 500 });
     return () => sr.destroy();
   }, []);
   
@@ -124,7 +90,7 @@ const Home = () => {
 
         <div className="social">
           <div
-            className="flex justify-center space-x-4 mt-10"
+            className="flex justify-center space-x-6 mt-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.0, delay: 0.5 }}
@@ -132,22 +98,14 @@ const Home = () => {
             <a
               href="https://github.com/Karuppanan007"
               target="_blank"
-              className="text-3xl text-gray-300 hover:text-orange-400 transition duration-300"
-              whileHover={{
-                scale: 1.3,
-                transition: { duration: 0.4, ease: "easeInOut" },
-              }}
-            >
+              className="text-3xl text-gray-300 hover:text-orange-400 transition duration-300" >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/karuppanan-k-b82184268/"
               target="_blank"
               className="text-3xl text-gray-300 hover:text-orange-400 transition duration-300"
-              whileHover={{
-                scale: 1.3,
-                transition: { duration: 0.4, ease: "easeInOut" },
-              }}
+
             >
               <FaLinkedin />
             </a>
@@ -155,10 +113,7 @@ const Home = () => {
               href="https://x.com/Karuppusurya7?t=0dppDGVr3M9vNjma3w_75g&s=09"
               target="_blank"
               className="text-3xl text-gray-300 hover:text-orange-400 transition duration-300"
-              whileHover={{
-                scale: 1.3,
-                transition: { duration: 0.4, ease: "easeInOut" },
-              }}
+
             >
               <RiTwitterXFill />
             </a>
@@ -167,10 +122,7 @@ const Home = () => {
               href="mailto:karuppusurya007@gmail.com"
               target="_blank"
               className="text-3xl text-gray-300 hover:text-orange-400 transition duration-300"
-              whileHover={{
-                scale: 1.3,
-                transition: { duration: 0.4, ease: "easeInOut" },
-              }}
+
             >
               <MdOutlineEmail />
             </a>

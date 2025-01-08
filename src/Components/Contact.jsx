@@ -27,15 +27,15 @@ const Contact = () => {
     useEffect(() => {
       const sr = ScrollReveal({
         origin: "bottom",
-        distance: "100px",
-        duration: 2000,
+        distance: "150px",
+        duration: 1500,
         easing: "ease-in-out",
         reset: true,
       });
     
-      sr.reveal(".head", { delay: 200 });
-      sr.reveal(".img", { delay: 400 });
-      sr.reveal(".form", { delay: 600 });
+      sr.reveal(".head");
+      sr.reveal(".img");
+      sr.reveal(".form");
     
       // Cleanup function to avoid memory leaks
       return () => sr.destroy();
@@ -82,7 +82,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-12 bg-gray-50">
+    <div id="contact" className="pt-24 bg-gray-50">
       <h1 className="head text-center text-4xl font-extrabold my-6 text-black animate__animated animate__fadeInDown">
         Contact Us
       </h1>
