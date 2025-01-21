@@ -8,6 +8,8 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import { RiTwitterXFill } from "react-icons/ri";
+import { IoLocationSharp } from "react-icons/io5";
+import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
 
 function App() {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -44,42 +46,58 @@ function App() {
         <Projects />
         <Contact />
       </div>
+
       <footer className="bg-orange-500 text-white py-8">
-        <div className="container px-2">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            {/* Personal Details Section - Left */}
-            <div className="mb-4 ms-3 md:mb-0 text-center md:text-left order-1 md:order-none flex flex-col items-center md:items-start">
-              <span className="text-sm flex gap-2 mt-1 items-center">
-                <FaPhoneAlt size={16} /> +91 7339137389
+        <div className="container">
+          <div className="flex flex-col md:flex-row justify-between">
+    
+            <div className="mb-4 ms-2 md:mb-0 ">
+              <h3 className='text-xl font-semibold mb-4'>CONTACT US </h3>
+            <span className="text-sm flex gap-1 ml-[-5px]">
+               <IoLocationSharp  size={20} />5/1031,Southstreet,Kullursandhai Virudhunagar-626004.
               </span>
-              <span className="text-sm flex gap-2 mt-1 items-center">
-                <FaEnvelope size={16} /> karuppusurya007@gmail.com
+              <span className="text-sm flex gap-1 mt-2">
+                <FaPhoneAlt size={15} />+91 7339137389
+              </span>
+              <span className="text-sm flex gap-1 mt-2">
+                <FaEnvelope size={15} />karuppusurya007@gmail.com
               </span>
             </div>
 
-            {/* Navigation Section - Center */}
-            <div className="text-center mb-4 md:mb-0 order-2 md:order-none">
-              <nav className="text-sm md:text-base space-x-4">
-                <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300">
+            <div className="lg:text-center ms-2 mb-4">
+            <h3 className='text-xl font-semibold mb-4'>QUICK LINKS</h3>
+              <nav className="text-sm flex flex-col">
+                <span className='flex gap-1'>
+                <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300">
                   Home
                 </button>
-                <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300">
+                </span>
+                <span className='flex gap-1'>
+                <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("about")} className="hover:text-yellow-300">
                   About
                 </button>
-                <button onClick={() => scrollToSection("resume")} className="hover:text-yellow-300">
+                </span>
+                <span className='flex gap-1'>
+                <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("resume")} className="hover:text-yellow-300">
                   Resume
                 </button>
-                <button onClick={() => scrollToSection("projects")} className="hover:text-yellow-300">
+                </span>
+                <span className='flex gap-1'>
+                <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("projects")} className="hover:text-yellow-300">
                   Projects
                 </button>
-                <button onClick={() => scrollToSection("contact")} className="hover:text-yellow-300">
+                </span>
+                <span className='flex gap-1'>
+                <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("contact")} className="hover:text-yellow-300">
                   Contact
                 </button>
+                </span>
               </nav>
             </div>
 
-            {/* Social Media Section - Right */}
-            <div className="flex space-x-5 order-3 md:order-none">
+            <div className=" ms-2">
+              <h3 className='text-xl font-semibold'>GET IN TOUCH!</h3>
+              <div className='flex space-x-5 mt-3'>
               <a
                 href="https://www.linkedin.com/in/karuppanan-k-b82184268/"
                 target="_blank"
@@ -107,6 +125,7 @@ function App() {
               <a href="mailto:karuppusurya007@gmail.com" target='_blank' rel='social media' className="hover:text-yellow-300 transition-all duration-300">
                 <FaEnvelope size={20} />
               </a>
+              </div>
             </div>
           </div>
         </div>
