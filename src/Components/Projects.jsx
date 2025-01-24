@@ -27,8 +27,8 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="pt-24">
-      <h1 className="text-4xl font-bold text-center project-title">Projects</h1>
+    <section id="projects" className="pb-10">
+      <h1 className="text-4xl font-bold text-center project-title pt-16">Projects</h1>
 
       <div className="flex justify-center mt-16 flex-wrap gap-10">
         {/* Project 1 */}
@@ -41,7 +41,7 @@ const Projects = () => {
           <div className="flex gap-5 justify-center">
             <a href="https://github.com/Karuppanan007/portfolio.git" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
               Code
-              <FaCode className='ms-2 mt-0.5'size={22} />
+              <FaCode className='ms-2 mt-0.5' size={22} />
             </a>
 
             <a href="https://karuppusurya.netlify.app/" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
@@ -63,7 +63,7 @@ const Projects = () => {
           <div className="flex gap-5 justify-center">
             <a href="https://github.com/Karuppanan007/Food-recipes.git" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
               Code
-              <FaCode className='ms-2 mt-0.5'size={22} />
+              <FaCode className='ms-2 mt-0.5' size={22} />
             </a>
 
             <a href="https://food-recipes-five-omega.vercel.app/" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
@@ -85,7 +85,7 @@ const Projects = () => {
           <div className="flex gap-5 justify-center">
             <a href="https://github.com/Karuppanan007/tic-tac-toe-game.git" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
               Code
-              <FaCode className='ms-2 mt-0.5'size={22} />
+              <FaCode className='ms-2 mt-0.5' size={22} />
             </a>
 
             <a href="https://mygame-tictactoe.netlify.app/" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
@@ -102,12 +102,12 @@ const Projects = () => {
           <img src={wiki} alt="wikipedia" width={180} height={100} className="ml-9" />
           <h5 className="mt-2 mb-2 text-2xl font-semibold tracking-tight text-black">Wikipedia Clone</h5>
           <p className="mb-7 text-[15px] text-black">
-          Developed a Wikipedia Clone Website replicating core features and ensuring a responsive, user-friendly design.
+            Developed a Wikipedia Clone Website replicating core features and ensuring a responsive, user-friendly design.
           </p>
           <div className="flex gap-5 justify-center">
             <a href="https://github.com/Karuppanan007/wikipedia-clone" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
               Code
-              <FaCode className='ms-2 mt-0.5'size={22} />
+              <FaCode className='ms-2 mt-0.5' size={22} />
             </a>
 
             <a href="https://wikipedia-clone-jade.vercel.app/" target="_blank" className="inline-flex text-md items-center p-1.5 px-5 rounded-md bg-orange-500 text-white">
@@ -117,6 +117,7 @@ const Projects = () => {
               </svg>
             </a>
           </div>
+
         </div>
 
       </div>

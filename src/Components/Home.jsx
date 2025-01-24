@@ -13,7 +13,6 @@ const Home = () => {
         behavior: "smooth",
         block: "start",
       });
-      setIsOpen(false);
     }
   };
 
@@ -29,7 +28,7 @@ const Home = () => {
     sr.reveal('.name', { origin: 'bottom' });
     sr.reveal('.sum', { origin: 'bottom', delay: 200 });
     sr.reveal('.img', { origin: 'bottom', delay: 300 });
-    sr.reveal('.more', { origin: 'bottom', delay: 400 });
+    sr.reveal('.more', { origin: 'bottom', delay: 300 });
     sr.reveal('.social', { origin: 'bottom', delay: 500 });
     return () => sr.destroy();
   }, []);
@@ -80,12 +79,12 @@ const Home = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.0, delay: 0.2, ease: "easeInOut" }}
           >
-            <a
+            <button
               onClick={() => scrollToSection("about")}
-              className="more inline-flex items-center  px-3 py-3 bg-orange-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-orange-600 transition:scroll duration-300 transform hover:scale-105"
+              className="more inline-flex items-center  px-3 py-2 bg-orange-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-orange-600 transition:scroll duration-300 transform hover:scale-105"
             >
               Explore More <FaArrowDown className="ml-2" />
-            </a>
+            </button>
           </div>
 
         <div className="social">

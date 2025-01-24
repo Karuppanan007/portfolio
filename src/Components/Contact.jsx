@@ -82,8 +82,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="pt-24 bg-gray-50">
-      <h1 className="head text-center text-4xl font-extrabold my-6 text-black animate__animated animate__fadeInDown">
+    <div id="contact" className="bg-gray-50 pb-7">
+      <h1 className="head text-center text-4xl font-extrabold my-6 text-black pt-24">
         Contact Us
       </h1>
 
@@ -93,7 +93,7 @@ const Contact = () => {
           <img
             src={mail}
             alt="Contact Illustration"
-            className="max-w-xs md:max-w-sm lg:max-w-md unique-animation"
+            className="h-80 unique-animation"
           />
         </div>
 

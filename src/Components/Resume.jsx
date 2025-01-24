@@ -25,9 +25,9 @@ const Resume = () => {
 
 
   return (
-    <div id="resume" className=" pt-14">
+    <div id="resume" className="pb-7">
 
-      <h1 className="resume text-4xl font-bold text-center pt-10 mb-6 animate-fade-in">
+      <h1 className="resume text-4xl font-bold text-center pt-14 mb-6">
         Resume
       </h1>
 
@@ -65,7 +65,7 @@ const Resume = () => {
       </div>
 
 
-      <div className="education bg-white shadow-lg rounded-lg p-2 md:p-10 max-w-3xl mx-auto animate-slide-up">
+      <div className="education bg-white shadow-lg rounded-lg p-1 md:p-8 max-w-3xl mx-auto">
         <div className="flex items-center gap-3 mb-3">
           <MdSchool size={35} className="text-orange-400" />
           <h2 className="text-3xl font-semibold  pb-2">

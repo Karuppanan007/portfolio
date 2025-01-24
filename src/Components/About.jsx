@@ -36,7 +36,7 @@ const About = () => {
       sr.reveal(".sum");
       sr.reveal(".skill");
       sr.reveal(".head");
-    
+     
       return () => sr.destroy();
     }, []);
     
@@ -76,7 +76,7 @@ const About = () => {
             <motion.img
               src={profile}
               alt="Karuppanan"
-              className="w-64 sm:w-56 md:w-64 filter items-center lg:mr-10 rounded-full shadow-lg border-4 border-yellow-300"
+              className="h-64 filter items-center lg:mr-10 rounded-full shadow-lg border-4 border-yellow-300"
               transition={{
                 repeat: Infinity,
                 duration: 3,
@@ -90,10 +90,10 @@ const About = () => {
 
         <section
           id="myskills"
-          className="skill pb-10 mt-5  px-6 sm:px-12 flex flex-col items-center justify-center"
+          className="skill pb-28 mt-5  px-6 sm:px-12 flex flex-col items-center justify-center"
         >
-          <h1 className="text-3xl font-bold mb-10">My Skills</h1>
-          <div className="flex flex-wrap justify-center gap-12">
+          <h1 className="text-3xl font-bold">My Skills</h1>
+          <div className="flex flex-wrap mt-10 justify-center gap-12">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}

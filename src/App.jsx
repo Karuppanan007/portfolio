@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowConfetti(false);
-    }, 6000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} numberOfPieces={250}
+      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} numberOfPieces={220}
         gravity={0.1}
         colors={['#ff0', '#ff6347', '#87cefa']} />}
 
@@ -47,25 +47,25 @@ function App() {
         <Contact />
       </div>
 
-      <footer className="bg-orange-500 text-white py-8">
+      <footer className="bg-orange-500 text-white py-6">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between">
     
-            <div className="mb-4 ms-2 md:mb-0 ">
-              <h3 className='text-xl font-semibold mb-4'>CONTACT US </h3>
+            <div className="mb-2 ms-2 md:mb-0 ">
+              <h3 className='text-xl font-semibold mb-2'>CONTACT US </h3>
             <span className="text-sm flex gap-1 ml-[-5px]">
-               <IoLocationSharp  size={20} />5/1031,Southstreet,Kullursandhai Virudhunagar-626004.
+               <IoLocationSharp  size={20} />5/1031, Southstreet, Kullursandhai, Virudhunagar-626004.
               </span>
-              <span className="text-sm flex gap-1 mt-2">
+              <span className="text-sm flex gap-1 mt-1.5">
                 <FaPhoneAlt size={15} />+91 7339137389
               </span>
-              <span className="text-sm flex gap-1 mt-2">
+              <span className="text-sm flex gap-1 mt-1.5">
                 <FaEnvelope size={15} />karuppusurya007@gmail.com
               </span>
             </div>
 
-            <div className="lg:text-center ms-2 mb-4">
-            <h3 className='text-xl font-semibold mb-4'>QUICK LINKS</h3>
+            <div className="lg:text-center ms-2 mb-2">
+            <h3 className='text-xl font-semibold mb-2'>QUICK LINKS</h3>
               <nav className="text-sm flex flex-col">
                 <span className='flex gap-1'>
                 <MdOutlineKeyboardDoubleArrowRight  size={22} /> <button onClick={() => scrollToSection("home")} className="hover:text-yellow-300">
